@@ -4,6 +4,16 @@ launchscripts
 Launch-Academy-specific hubot scripts
 These are a collection of Launch Academy scripts for hubot, a chat bot.
 
+###Resources
+
+List of all public hubot scripts: http://hubot-script-catalog.herokuapp.com/
+Github of all public hubot scripts: https://github.com/github/hubot-scripts
+
+#####Tutorials
+
+http://theprogrammingbutler.com/blog/archives/2011/10/28/hubot-scripts-explained/
+http://net.tutsplus.com/tutorials/javascript-ajax/writing-hubot-plugins-with-coffeescript/
+
 ###Documentation
 
     # Description
