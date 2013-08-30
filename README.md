@@ -6,8 +6,11 @@ These are a collection of Launch Academy scripts for hubot, a chat bot.
 
 ###Resources
 
-List of all public hubot scripts: http://hubot-script-catalog.herokuapp.com/
-Github of all public hubot scripts: https://github.com/github/hubot-scripts
+#####Public Hubot Scripts 
+http://hubot-script-catalog.herokuapp.com/
+
+######On Github
+https://github.com/github/hubot-scripts
 
 #####Tutorials
 
