@@ -42,12 +42,6 @@ space_oddities = ["This is Major Tom to Ground Control
                   And there's nothing I can do."
                   ]
 
-
-
-
-
-
-
-module.exports = (robot) ->
-  robot.hear /ground control to major tom/i, (msg) ->
-    msg.send msg.random space_oddities
+  module.exports = (robot) ->
+    robot.hear /ground control to major tom/i, (msg) ->
+      msg.send msg.random space_oddities
