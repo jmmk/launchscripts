@@ -17,7 +17,7 @@ https://github.com/github/hubot-scripts
 http://theprogrammingbutler.com/blog/archives/2011/10/28/hubot-scripts-explained/    
 http://net.tutsplus.com/tutorials/javascript-ajax/writing-hubot-plugins-with-coffeescript/
 
-###Documentation
+###Add Documentation To Your Script
 
     # Description
     #   <description of the scripts functionality>
