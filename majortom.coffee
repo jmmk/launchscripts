@@ -1,3 +1,21 @@
+# Description
+#   Quotes Space Oddity lyrics
+#
+# Dependencies:
+#   None
+#
+# Configuration:
+#   None
+#
+# Commands:
+#   ground control to major tom - Reply with a stanza of David Bowie's Space Oddity
+#
+# Notes:
+#   None
+#
+# Author:
+#   jmmk
+
 space_oddities = ["This is Major Tom to Ground Control
                   I'm stepping through the door
                   And I'm floating
