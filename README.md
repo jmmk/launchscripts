@@ -9,12 +9,14 @@ These are a collection of Launch Academy scripts for hubot, a chat bot.
 #####Public Hubot Scripts 
 http://hubot-script-catalog.herokuapp.com/
 
-######On Github
+#####On Github
 https://github.com/github/hubot-scripts
 
 #####Tutorials
 
 http://theprogrammingbutler.com/blog/archives/2011/10/28/hubot-scripts-explained/
+
+
 http://net.tutsplus.com/tutorials/javascript-ajax/writing-hubot-plugins-with-coffeescript/
 
 ###Documentation
