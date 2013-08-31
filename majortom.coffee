@@ -1,20 +1,12 @@
 # Description
 #   Quotes Space Oddity lyrics
 #
-# Dependencies:
-#   None
-#
-# Configuration:
-#   None
-#
 # Commands:
 #   ground control to major tom - Reply with a stanza of David Bowie's Space Oddity
 #
-# Notes:
-#   None
-#
 # Author:
 #   jmmk
+#
 
 space_oddities = ["This is Major Tom to Ground Control
                   I'm stepping through the door
@@ -42,6 +34,6 @@ space_oddities = ["This is Major Tom to Ground Control
                   And there's nothing I can do."
                   ]
 
-  module.exports = (robot) ->
-    robot.hear /ground control to major tom/i, (msg) ->
-      msg.send msg.random space_oddities
+module.exports = (robot) ->
+  robot.hear /ground control to major tom/i, (msg) ->
+    msg.send msg.random space_oddities
