@@ -16,6 +16,17 @@ https://github.com/github/hubot-scripts
 http://theprogrammingbutler.com/blog/archives/2011/10/28/hubot-scripts-explained/    
 http://net.tutsplus.com/tutorials/javascript-ajax/writing-hubot-plugins-with-coffeescript/
 
+
+###Testing Your Script
+1. Install npm and node:  brew install npm  
+2. Install hubot and coffeescript:  npm install -g hubot coffeescript  
+3. Create a hubot:  hubot --create myhubot  
+4. Go into your new hubot directory: cd myhubot  
+5. Place your script in the scripts folder  
+6. Start your hubot: bin/hubot  
+7. Press enter to get the Hubot> prompt and test any command you want  
+
+
 ###Add Documentation To Your Script
 
     # Description
