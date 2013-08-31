@@ -1,7 +1,7 @@
 launchscripts
 =============
 
-These are a collection of Launch Academy scripts for hubot, a chat bot.
+These are a collection of Launch-Academy-specific scripts for hubot, a chat bot.
 
 ##Resources
 
