@@ -26,6 +26,8 @@ http://net.tutsplus.com/tutorials/javascript-ajax/writing-hubot-plugins-with-cof
 6. Start your hubot: bin/hubot  
 7. Press enter to get the Hubot> prompt and test any command you want  
 
+For more information see: https://github.com/github/hubot/blob/master/docs/README.md  
+
 
 ###Add Documentation To Your Script
 
