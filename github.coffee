@@ -21,5 +21,5 @@ octocats = [
 ]
 
 module.exports = (robot) ->
-    robot.hear /github/i, (msg) ->
+    robot.hear /octocat/i, (msg) ->
       msg.send msg.random octocats 
