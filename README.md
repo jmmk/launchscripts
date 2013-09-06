@@ -1,7 +1,7 @@
 launchscripts
 =============
 
-These are a collection of Launch-Academy-specific scripts for hubot, a chat bot.
+These are a collection of Launch-Academy-specific hubot scripts made by Launch Academy students.
 
 ##Resources
 
@@ -18,13 +18,13 @@ http://net.tutsplus.com/tutorials/javascript-ajax/writing-hubot-plugins-with-cof
 
 
 ###Testing Your Script
-1. Install npm and node:  brew install npm  
-2. Install hubot and coffeescript:  npm install -g hubot coffeescript  
-3. Create a hubot:  hubot --create myhubot  
-4. Go into your new hubot directory: cd myhubot  
+1. Install npm and node:  `brew install npm`    
+2. Install hubot and coffeescript:  `npm install -g hubot coffeescript`  
+3. Create a hubot:  `hubot --create myhubot`     
+4. Go into your new hubot directory: `cd myhubot`    
 5. Place your script in the scripts folder  
-6. Start your hubot: bin/hubot  
-7. Press enter to get the Hubot> prompt and test any command you want  
+6. Start your hubot: `bin/hubot`    
+7. Press enter to get the `Hubot>` prompt and test any command you want  
 
 For more information see: https://github.com/github/hubot/blob/master/docs/README.md  
 
