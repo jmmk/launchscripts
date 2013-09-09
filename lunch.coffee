@@ -26,13 +26,11 @@ lunch_options = [
 ]
 
 module.exports = (robot) ->
-  robot.respond /its lunchtime/i, (msg) ->
-    msg.reply msg.random lunch_options
+  robot.respond /its lunchtime$/i, (msg) ->
+    msg.reply msg.random lunch_options    
 
-module.exports = (robot) ->
   robot.respond /its lunchtime on monday/i, (msg) ->
     msg.reply "Go to Chicken n' Rice Guys. Right now. Why are you still standing here?"
 
-    module.exports = (robot) ->
   robot.respond /its lunchtime on wednesday/i, (msg) ->
     msg.reply "Go to Chicken n' Rice Guys. Right now. Why are you still standing here?"
