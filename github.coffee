@@ -2,7 +2,7 @@
 #   Displays a bad ass octocat every time you mention github
 #
 # Commands:
-#   github - Display a random octocat picture. 
+#   octocat - Display a random octocat picture.
 #
 # Author:
 #   gjackson12
@@ -22,4 +22,4 @@ octocats = [
 
 module.exports = (robot) ->
     robot.hear /octocat/i, (msg) ->
-      msg.send msg.random octocats 
+      msg.send msg.random octocats
