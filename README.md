@@ -16,6 +16,9 @@ https://github.com/github/hubot-scripts
 http://theprogrammingbutler.com/blog/archives/2011/10/28/hubot-scripts-explained/    
 http://net.tutsplus.com/tutorials/javascript-ajax/writing-hubot-plugins-with-coffeescript/
 
+#####Everything your script can do
+https://github.com/github/hubot/blob/master/docs/scripting.md
+
 
 ###Testing Your Script
 1. Install npm and node:  `brew install npm`    
