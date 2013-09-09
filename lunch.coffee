@@ -1,9 +1,11 @@
 # Description
-#   Cures your lunchtime indecision. 
+#   Cures your lunchtime indecision.
 #
 # Commands:
 #   hubot its lunchtime - Reply with a random lunch option.
-#   hubot its lunchtime on monday/wednesday - Get the fuck to CnR ASAP. 
+#   hubot its lunchtime on monday/wednesday - Get to CnR ASAP.
+#   alt. it's lunch time
+#
 # Author:
 #   bencalegari
 #
@@ -22,15 +24,12 @@ lunch_options = [
   "Sam La Grassa's",
   "Figaro's",
   "Sebastians",
-  "Bon Mi"
+  "Bahn Mi"
 ]
 
 module.exports = (robot) ->
-  robot.respond /its lunchtime$/i, (msg) ->
-    msg.reply msg.random lunch_options    
+  robot.respond /it\'?s lunch\s?time$/i, (msg) ->
+    msg.reply msg.random lunch_options
 
-  robot.respond /its lunchtime on monday/i, (msg) ->
-    msg.reply "Go to Chicken n' Rice Guys. Right now. Why are you still standing here?"
-
-  robot.respond /its lunchtime on wednesday/i, (msg) ->
+  robot.respond /it\'?s lunch\s?time on (monday|wednesday)/i, (msg) ->
     msg.reply "Go to Chicken n' Rice Guys. Right now. Why are you still standing here?"
