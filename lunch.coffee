@@ -9,19 +9,19 @@
 #
 
 lunch_options = [
-  "Five Guys"
-  "Boloco"
-  "Chipotle"
-  "b.good"
-  "Dumpling King"
-  "Dumpling Cafe"
-  "Boston Kitchen Pizza"
-  "Four Burgers"
-  "Al Capone"
-  "Sa Pa"
-  "Sam La Grassa's"
-  "Figaro's"
-  "Sebastians"
+  "Five Guys",
+  "Boloco",
+  "Chipotle",
+  "b.good",
+  "Dumpling King",
+  "Dumpling Cafe",
+  "Boston Kitchen Pizza",
+  "Four Burgers",
+  "Al Capone",
+  "Sa Pa",
+  "Sam La Grassa's",
+  "Figaro's",
+  "Sebastians",
   "Bon Mi"
 ]
 
