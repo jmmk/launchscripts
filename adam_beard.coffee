@@ -2,7 +2,7 @@
 #    Displays a picture of Adam with a beard
 #
 # Commands:
-#   adam_beard - Displays a picture of Adam with a beard
+#   adambeard me- Displays a picture of Adam with a beard
 #
 # Author:
 #   gjackson12
@@ -15,5 +15,5 @@ adambeard = [
 ]
 
 module.exports = (robot) ->
-    robot.hear /adambeard/i, (msg) ->
+    robot.respond /adambeard( me)?/i, (msg) ->
       msg.send msg.random adambeard
