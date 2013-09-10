@@ -7,7 +7,7 @@
 #   alt. it's lunch time
 #
 # Author:
-#   bencalegari
+#   bencalegari, jmmk
 #
 
 lunch_options = [
