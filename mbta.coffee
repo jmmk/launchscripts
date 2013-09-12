@@ -18,6 +18,7 @@ Array::unique = ->
 
 module.exports = (robot) ->
   robot.respond /mbta (.*(line|rail)) (.*) (.*)/i, (msg) ->
+    msg.send "WARNING: This script is in beta testing, do not trust output!"
     directions = {
       'southbound': '0'
       'northbound': '1'
