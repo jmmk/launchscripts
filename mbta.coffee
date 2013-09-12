@@ -1,6 +1,9 @@
 # Description:
 #   A way to interact with the MBTA API
 #
+# Configuration:
+#   HUBOT_MBTA_API_KEY
+#
 # Commands:
 #   hubot mbta subway line station direction
 #   e.g. hubot mbta red line downtown crossing southbound
@@ -11,6 +14,8 @@
 #   jmmk
 #
 
+api_key = process.env HUBOT_MBTA_API_KEY
+
 Array::unique = ->
   output = {}
   output[@[key]] = @[key] for key in [0...@length]
@@ -19,6 +24,7 @@ Array::unique = ->
 module.exports = (robot) ->
   robot.respond /mbta (.*(line|rail)) (.*) (.*)/i, (msg) ->
     msg.send "WARNING: This script is in beta testing, do not trust output!"
+    msg.send api_key
     directions = {
       'southbound': '0'
       'northbound': '1'
@@ -36,7 +42,7 @@ module.exports = (robot) ->
     now = new Date()
     emit = ["The next trains will leave the station in:"]
 
-    msg.http('http://realtime.mbta.com/developer/api/v1/routes?api_key=bIi2FxyGn0ui-Pl2x3seag')
+    msg.http("http://realtime.mbta.com/developer/api/v1/routes?api_key=#{api_key}")
       .header('Accept', 'application/json')
       .get() (err, res, body) ->
         response = JSON.parse(body)
@@ -56,7 +62,7 @@ module.exports = (robot) ->
         setTimeout(emitDelay, 1500)
 
 getStop = (msg, direction, start_point, id, destination, now, delay, emit) ->
-  msg.http("http://realtime.mbta.com/developer/api/v1/stopsbyroute?api_key=bIi2FxyGn0ui-Pl2x3seag&route=#{id}")
+  msg.http("http://realtime.mbta.com/developer/api/v1/stopsbyroute?api_key=#{api_key}&route=#{id}")
     .header('Accept', 'application/json')
     .get() (err, res, body) ->
       response = JSON.parse(body)
@@ -71,7 +77,7 @@ getStop = (msg, direction, start_point, id, destination, now, delay, emit) ->
 
 getTrips = (msg, destination, now, emit) ->
   trains = []
-  msg.http("http://realtime.mbta.com/developer/api/v1/schedulebystop?api_key=bIi2FxyGn0ui-Pl2x3seag&stop=#{destination[0]}")#&route=#{destination[1]}")
+  msg.http("http://realtime.mbta.com/developer/api/v1/schedulebystop?api_key=#{api_key}&stop=#{destination[0]}")#&route=#{destination[1]}")
     .header('Accept', 'application/json')
     .get() (err, res, body) ->
       response = JSON.parse(body)
