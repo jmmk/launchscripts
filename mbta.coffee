@@ -24,7 +24,6 @@ Array::unique = ->
 module.exports = (robot) ->
   robot.respond /mbta (.*(line|rail)) (.*) (.*)/i, (msg) ->
     msg.send "WARNING: This script is in beta testing, do not trust output!"
-    msg.send api_key
     directions = {
       'southbound': '0'
       'northbound': '1'
@@ -50,7 +49,6 @@ module.exports = (robot) ->
           for mode in response['mode'][x]['route']
             if mode['route_name'].toLowerCase().indexOf(line) isnt -1
               route_ids.push(mode['route_id'])
-
         delay = 0
         route_ids.forEach (id) ->
           getStopDelay = -> getStop msg, direction, start_point, id, destination, now, delay, emit
