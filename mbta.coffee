@@ -14,7 +14,7 @@
 #   jmmk
 #
 
-api_key = process.env HUBOT_MBTA_API_KEY
+api_key = process.env.HUBOT_MBTA_API_KEY
 
 Array::unique = ->
   output = {}
